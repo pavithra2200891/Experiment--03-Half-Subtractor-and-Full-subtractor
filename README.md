@@ -33,22 +33,51 @@ Write the detailed procedure here
 
 
 ## Program:
+
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Pavithra Y
+RegisterNumber: 212222050043 
 */
+## PROGRAM FOR HALF SUBTRACTER;
+module expthree(a,b,difference,borrow);
+input a,b;
+output difference,bporrow;
+assign difference = (a^b);
+assign borrow = (~a^b);
+end module
 
-## Output:
 
-## Truthtable
+##PROGRAM FOR FULL SUBTRACTOR;
+module expfour(a,b,c,difference,borrow);
+input a,b,c;
+output difference,borrow;
+assign difference=(a^b^c);
+assign borrow=(~a&(b^c)|(b&c));
+endmodule
+##Output:
+
+## RTL realization:![output HS](https://user-images.githubusercontent.com/128951583/232287811-abbba145-c6e0-4c74-ba7f-63e3874c54b7.jpg)
+![output FS](https://user-images.githubusercontent.com/128951583/232287816-4421cae5-9879-4dfb-9a42-1afa9ff23a49.jpg)
 
 
 
-##  RTL realization
 
 
-## Timing diagram 
+## Truthtable:![truthtable HS](https://user-images.githubusercontent.com/128951583/232287827-88e1d0f4-a6b3-43c0-8762-2b60218d22a4.jpg)
+![truthtableFS](https://user-images.githubusercontent.com/128951583/232287833-48a67470-ab54-4f88-9d0c-54f5f919c06a.jpg)
+
+
+
+
+
+
+
+
+## Timing diagram ![timing diagram HS](https://user-images.githubusercontent.com/128951583/232287849-7599287d-86a0-465f-baf5-6abfb4e32d65.jpg)
+![timing diagram FS](https://user-images.githubusercontent.com/128951583/232287860-a583a46d-388d-465e-869b-090c5ca37aa9.jpg)
+
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
