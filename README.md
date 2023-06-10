@@ -41,42 +41,49 @@ RegisterNumber: 212222050043
 */
 ## PROGRAM FOR HALF SUBTRACTER;
 module expthree(a,b,difference,borrow);
+
 input a,b;
+
 output difference,bporrow;
+
 assign difference = (a^b);
+
 assign borrow = (~a^b);
+
 end module
 
+ ##PROGRAM FOR FULL SUBTRACTOR;
 
-##PROGRAM FOR FULL SUBTRACTOR;
 module expfour(a,b,c,difference,borrow);
+
 input a,b,c;
+
 output difference,borrow;
+
 assign difference=(a^b^c);
+
 assign borrow=(~a&(b^c)|(b&c));
+
 endmodule
+
 ##Output:
+## RTL realization:
+HALF SUBTRACTOR:
+![image](https://github.com/pavithra2200891/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/128951583/59a99111-65b1-4149-a818-ee0f1a2743c7)
+FULL SUBTRACTOR:
+![image](https://github.com/pavithra2200891/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/128951583/4fea00e6-00ec-425d-930d-a55e056db352)
 
-## RTL realization:![output HS](https://user-images.githubusercontent.com/128951583/232287811-abbba145-c6e0-4c74-ba7f-63e3874c54b7.jpg)
-![output FS](https://user-images.githubusercontent.com/128951583/232287816-4421cae5-9879-4dfb-9a42-1afa9ff23a49.jpg)
+## Truthtable:
+HALF SUBTRACTOR:
+![image](https://github.com/pavithra2200891/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/128951583/b07a6021-b8c6-443f-b9ad-ec09e42bb987)
+FULL SUBTRACTOR:
+![image](https://github.com/pavithra2200891/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/128951583/a2c91002-4a10-457b-a61f-3017cfe919a0)
 
-
-
-
-
-## Truthtable:![truthtable HS](https://user-images.githubusercontent.com/128951583/232287827-88e1d0f4-a6b3-43c0-8762-2b60218d22a4.jpg)
-![truthtableFS](https://user-images.githubusercontent.com/128951583/232287833-48a67470-ab54-4f88-9d0c-54f5f919c06a.jpg)
-
-
-
-
-
-
-
-
-## Timing diagram ![timing diagram HS](https://user-images.githubusercontent.com/128951583/232287849-7599287d-86a0-465f-baf5-6abfb4e32d65.jpg)
-![timing diagram FS](https://user-images.githubusercontent.com/128951583/232287860-a583a46d-388d-465e-869b-090c5ca37aa9.jpg)
-
+## Timing diagram:
+HALF SUBTRACTOR:
+![image](https://github.com/pavithra2200891/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/128951583/8c70cb6c-5302-4ea6-bc5f-afb4eb21b8d7)
+FULL SUBTRACTOR:
+![image](https://github.com/pavithra2200891/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/128951583/3cfbd82e-cecb-4f34-8c65-fd0dc84e2782)
 
 
 ## Result:
